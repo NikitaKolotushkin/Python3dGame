@@ -1,2 +1,2 @@
-# Python3dGame
-Python 3D game
+# PythonRayCasting2D
+2d Ray casting on python

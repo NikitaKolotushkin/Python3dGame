@@ -4,7 +4,7 @@ from player import Player
 import math
 from map import world_map
 from ray_casting import ray_casting
-from drawning import Drawning
+from drawing import Drawing
 
 pygame.init()
 game = pygame.display.set_mode((WIDTH, HEIGHT))

@@ -10,6 +10,7 @@ pygame.init()
 game = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 player = Player()
+drawing = Drawing(game)
 
 while True:
     for event in pygame.event.get():
@@ -19,10 +20,9 @@ while True:
     player.movement()
     game.fill(BLACK)
 
-    pygame.draw.rect(game, SKYBLUE, (0, 0, WIDTH, HEIGHT))
-    pygame.draw.rect(game, DARKGRAY, (0, HALF_HEIGHT, WIDTH, HALF_HEIGHT))
-
-    ray_casting(game, player.pos, player.angle)
+    drawing.background()
+    drawing.world(player.pos, player.angle)
+    drawing.fps(clock)
 
     # pygame.draw.circle(game, GREEN, (int(player.x), int(player.y)), 12)
     # pygame.draw.line(game, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),

@@ -18,6 +18,9 @@ while True:
     player.movement()
     sc.fill(BLACK)
 
+    pygame.draw.rect(sc, BLUE, (0, 0, WIDTH, HEIGHT))
+    pygame.draw.rect(sc, DARKGRAY, (0, HALF_HEIGHT, WIDTH, HALF_HEIGHT))
+
     ray_casting(sc, player.pos, player.angle)
 
     # pygame.draw.circle(sc, GREEN, (int(player.x), int(player.y)), 12)

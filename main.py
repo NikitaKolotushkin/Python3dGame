@@ -4,6 +4,7 @@ from player import Player
 import math
 from map import world_map
 from ray_casting import ray_casting
+from drawning import Drawning
 
 pygame.init()
 game = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -18,7 +19,7 @@ while True:
     player.movement()
     game.fill(BLACK)
 
-    pygame.draw.rect(game, BLUE, (0, 0, WIDTH, HEIGHT))
+    pygame.draw.rect(game, SKYBLUE, (0, 0, WIDTH, HEIGHT))
     pygame.draw.rect(game, DARKGRAY, (0, HALF_HEIGHT, WIDTH, HALF_HEIGHT))
 
     ray_casting(game, player.pos, player.angle)

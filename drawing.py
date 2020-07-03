@@ -1,2 +1,3 @@
 class Drawing:
     pass
+    pass

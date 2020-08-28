@@ -1,11 +1,12 @@
 import pygame
-from settings import *
 from ray_casting import ray_casting
+from settings import *
+
 
 class Drawing:
     def __init__(self, game):
         self.game = game
-        self.font = pygame.font.SysFont('Arial', 36, bold = True)
+        self.font = pygame.font.SysFont("Arial", 36, bold=True)
 
     def background(self):
         pygame.draw.rect(self.game, SKYBLUE, (0, 0, WIDTH, HEIGHT))

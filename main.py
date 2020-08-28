@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import math
 import pygame
 from drawing import Drawing
@@ -24,13 +27,6 @@ while True:
     drawing.background()
     drawing.world(player.pos, player.angle)
     drawing.fps(clock)
-
-    # pygame.draw.circle(game, GREEN, (int(player.x), int(player.y)), 12)
-    # pygame.draw.line(game, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
-    #                                          player.y + WIDTH * math.sin(player.angle)))
-
-    # for x, y in world_map:
-    #     pygame.draw.rect(game, DARKGRAY, (x, y, TILE, TILE), 2)
 
     pygame.display.flip()
     clock.tick(FPS)

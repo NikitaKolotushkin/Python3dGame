@@ -1,5 +1,6 @@
 import math
 
+
 # GAME SETTINGS
 WIDTH = 1200
 HEIGHT = 800

@@ -1,10 +1,11 @@
-import pygame
-from settings import *
-from player import Player
 import math
-from map import world_map
-from ray_casting import ray_casting
+import pygame
 from drawing import Drawing
+from map import world_map
+from player import Player
+from ray_casting import ray_casting
+from settings import *
+
 
 pygame.init()
 game = pygame.display.set_mode((WIDTH, HEIGHT))
